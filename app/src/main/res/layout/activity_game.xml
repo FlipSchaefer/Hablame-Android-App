@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="chatbot.morpheus.de.hablame_android_app.GameActivity"
+    android:background="#98B96F">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punkte:"
+        android:id="@+id/punkte_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="50dp"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/punkte"
+        android:textSize="100dp"
+        android:layout_below="@+id/punkte_id"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ich habe genommen:"
+        android:id="@+id/computer"
+        android:layout_below="@+id/punkte"
+        android:textSize="20dp"
+        android:layout_alignEnd="@id/computer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Du hast genommen:"
+        android:id="@+id/user"
+        android:layout_below="@+id/computer"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:layout_alignEnd="@id/user" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/computer_choice"
+        android:textSize="20dp"
+        android:text="sample"
+        android:layout_alignBaseline="@+id/computer"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_choice"
+        android:textSize="20dp"
+        android:text="sample"
+        android:layout_alignBaseline="@+id/user"
+        android:layout_alignParentRight="true"
+        android:textAlignment="gravity"
+        android:gravity="end"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schere_id"
+        android:src="@drawable/schere"
+        android:background="#98B96F"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stein_id"
+        android:src="@drawable/stein"
+        android:background="#98B96F"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/papier_id"
+        android:src="@drawable/papier"
+        android:backgroundTint="#98B96F"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/computer_pic"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#98B96F"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
